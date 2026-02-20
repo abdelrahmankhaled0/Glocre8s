@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glocre8s</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="scroll-smooth">
+    <header>
+        <nav class="flex justify-center gap-3 lg:gap-30 items-center  navBar">
+            <div class="cart__page">
+                <i class="fa-solid fa-circle-xmark cart__page__closingIcon"></i>
+
+                <div class="cart__content"></div>
+            </div>
+            <ul class="hidden lg:flex  justify-center items-center gap-10 ">
+                <li><a href="pages/login.html">
+                        <div class="flex justify-center items-center gap-1 signIn__click">
+                            <p class="font-medium text-xl">Sign In</p>
+                            <i class="fa-solid fa-user text-[#FF4500] font-medium"></i>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="flex justify-center items-center gap-1">
+                            <p class="font-medium text-xl">Track</p>
+                            <i class="fa-solid fa-truck text-[#FF4500] font-medium"></i>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class=" flex justify-center items-center gap-1">
+                            <p class="font-medium text-xl">Wish List</p>
+                            <i class="fa-solid fa-heart text-[#FF4500] font-medium"></i>
+                        </div>
+                    </a></li>
+            </ul>
+            <img class="" src=" ./images/logo.png" alt="">
+            <div class="hidden lg:flex relative">
+                <input class=" p-[10px] h-10 w-80 rounded-full border-solid border-gray-400 border  "
+                    placeholder="Search All Items">
+
+                <button
+                    class="cursor-pointer absolute right-0 h-10 w-24 rounded-full font-semibold flex items-center justify-center text-white bg-[#FF4500]">
+                    SEARCH
+                </button>
+            </div>
+            <div class="flex relative cursor-pointer cart__icon">
+                <i class="fa-solid fa-cart-shopping text-2xl "></i>
+                <div
+                    class="absolute -top-2 -right-2 bg-[#FF4500] w-5 h-5 flex justify-center text-center items-center rounded-full text-white">
+                    0
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero m-[30px] lg:mx-[100px] lg:grid lg:grid-cols-3 items-center ">
+            <div class="col-span-1">
+                <h1 class="font-medium , text-3xl text-[#FF4500]">Creativity Is Life!</h1>
+                <p class="my-6 leading-5 lg:max-w-80 ">We just love being creative.Being able to see
+                    our ideas come alive and becoming useful.
+                    That brings fulfilment!</p>
+                <button class="cursor-pointer px-4 rounded-full h-8 text-white bg-[#FF4500]" type="button">ABOUT
+                    US</button>
+            </div>
+            <img class="my-6 col-span-2" src="./images/hero.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="slider relative lg:mx-[50px]">
+            <div>
+                <img class=" lg:w-[100%] lg:h-[600px] slider__image rounded-lg" src="./images/slider.png" alt="">
+            </div>
+            <div class="absolute top-4 left-4 lg:top-52 lg:left-28">
+                <p class="text-white lg:text-3xl">LIMITED TIME OFFER</p>
+                <h1 class="text-white text-4xl my-1 lg:text-7xl">20% OFF</h1>
+                <p class="text-white text-sm w-32 lg:text-2xl lg:w-[100%]">All Earrings And Necklace</p>
+                <a href="#product__section"><button
+                        class=" cursor-pointer px-4 rounded-full h-8 text-white bg-[#FF4500] my-6 lg:h-12 lg:w-40 lg:text-xl "
+                        type="button">SHOP
+                        NOW</button>
+                </a>
+            </div>
+            <div class="absolute right-5 text-2xl lg:right-10 top-[50%] lg:text-5xl text-white">
+                <i class="cursor-pointer fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <section class="relative category text-center my-10 py-5 ">
+            <img class="absolute right-0 lg:w-[150px]" src="./images/decore.png" alt="">
+            <img class="absolute lg:w-[40px]" src="./images/decore2.png" alt="">
+            <img class="absolute bottom-0 right-0 lg:w-[40px] " src="./images/decore4.png" alt="">
+            <img class="absolute bottom-0 rotate-180 lg:w-[150px]" src="./images/decore.png" alt="">
+            <h1 class="text-xl lg:text-3xl lg:mb-[50px] lg:tracking-widest ">SHOP BY CATEGORY</h1>
+            <div class="grid grid-cols-2 gap-3 m-[20px] lg:grid-cols-3 lg:mx-50">
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px] lg:mb-[50px] hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category1.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">JEWELRIES</h1>
+                </div>
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px] lg:mb-[50px] hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category4.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">HEAD WRAPS</h1>
+                </div>
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px] lg:mb-[50px] hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category5.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">FABRICS</h1>
+                </div>
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px]  hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category3.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">SOAPS</h1>
+                </div>
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px]  hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category6.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">HOME DECOR</h1>
+                </div>
+                <div
+                    class="flex justify-evenly shadow-2xl py-5 bg-slate-300 rounded-full items-center lg:h-[120px]  hover:animate-bounce cursor-pointer">
+                    <img class="w-8 lg:w-16" src="./images/category2.png" alt="">
+                    <h1 class="border-y-3 border-[#FF4500] font-semibold text-sm lg:text-2xl">DIGITAL PRINTS</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- text-xl lg:text-3xl lg:mb-[50px] lg:tracking-widest -->
+
+
+
+        <section class=" featured__item border-y-gray-400 border-y-1" id="product__section">
+            <h1 class="my-5 text-center lg:font-semibold text-xl tracking-widest lg:text-4xl lg:my-20">Our Products
+            </h1>
+            <div class="grid grid-cols-2 m-5 gap-4 lg:grid-cols-4 lg:mx-56 products__container">
+            </div>
+            <!-- bg-[#eaeaea]  shadow-2xl rounded-xl  -->
+        </section>
+        <section class="my-7 lg:mx-32">
+            <h1 class=" text-center lg:font-semibold text-xl tracking-widest lg:text-4xl lg:my-20">REVIEWS</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 my-8 ">
+                <div
+                    class="border-y-gray-400 py-5 border-b-1 my-4 lg:border-none bg-[#eaeaea]  shadow-2xl rounded-xl hover:scale-110 duration-300">
+                    <div class="flex justify-center items-center gap-4  ">
+                        <img src="images/review1.png" alt="">
+                        <div>
+                            <p>Jane on 15 April,2021 </p>
+                            <div class="flex">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <p class="">5.0/5.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center m-8 h-[100px]">Thank you so much for delivering a quality piece.
+                        Will be using it with one of my outfits.
+                        Just not sure which one!!!!</p>
+                    <div class="flex justify-center items-center gap-2 m-4 h-[100px]">
+                        <img src="images/product6.png" alt="">
+                        <p class="text-center">White And Black African Wax Fabric</p>
+
+                    </div>
+                </div>
+                <div
+                    class="border-y-gray-400 py-5 border-b-1 my-4 lg:border-none  bg-[#eaeaea]  shadow-2xl rounded-xl hover:scale-110 duration-300">
+                    <div class="flex justify-center items-center gap-4 ">
+                        <img src="images/review2.png" alt="">
+                        <div>
+                            <p>Femi on 3 April,2021</p>
+                            <div class="flex">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star-half.png" alt="">
+                                <p class="">4.5/5.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center m-8  h-[100px]">This is awesome. My wife fell in love with it at first sight.
+                    </p>
+                    <div class="flex justify-center items-center gap-2 m-4 h-[100px]">
+                        <img src="images/product5.png" alt="">
+                        <p class="text-center">Wedding Anniversay Printable Gift</p>
+
+                    </div>
+                </div>
+                <div
+                    class="border-y-gray-400 py-5 border-b-1 my-4 lg:border-none bg-[#eaeaea]  shadow-2xl rounded-xl hover:scale-110 duration-300">
+                    <div class="flex justify-center items-center gap-4  ">
+                        <img src="images/review3.png" alt="">
+                        <div>
+                            <p>Ife on 25 March,2021 </p>
+                            <div class="flex">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <p class="">5.0/5.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center m-8 h-[100px]">I love this soap. Great on my
+                        sensitive skin. </p>
+                    <div class="flex justify-center items-center gap-2 m-4 h-[100px]">
+                        <img src="images/product4.png" alt="">
+                        <p class="text-center">Goat Milk Turmeric
+                            Glow Soap</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="">
+        <div class="bg-[#FF4500] px-5 text-white text-lg lg:p-20">
+
+            <div class="grid grid-cols-2 gap-8 lg:grid-cols-5 lg:justify-items-stretch ">
+                <div>
+                    <h1 class="font-bold mb-4">HELP & SUPPORT</h1>
+                    <ul>
+                        <li>Shipping Info</li>
+                        <li>Returns</li>
+                        <li>How To Order</li>
+                        <li>How To Track</li>
+                        <li>Size Guide</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-bold mb-4">COMPANY INFO</h1>
+                    <ul>
+                        <li>About GloCre8s</li>
+                        <li>Affiliate</li>
+                        <li>Fashion Vlog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-bold mb-4">CUSTOMER CARE</h1>
+                    <ul>
+                        <li>Contact US</li>
+                        <li>Payment Method</li>
+                        <li>Offer Redemption</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-bold">FIND US ON</h1>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+
+                </div>
+                <div class="lg:hidden"></div>
+                <div>
+                    <h1 class="font-semibold">APP</h1>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-android"></i>
+                </div>
+                <div class="hidden lg:grid lg:col-span-3 "></div>
+                <div class="col-span-2 ">
+                    <h1 class="mb-2 font-normal text-2xl">SIGN UP FOR GloCre8s NEWS</h1>
+                    <p>By clicking the SUBSCRIBE button, you are agreeing to our <span class="underline">Privacy &
+                            Cookie Policy</span></p>
+                </div>
+                <div class="hidden lg:grid lg:col-span-3 w-[465px]">
+                    <p>©2021 GloCre8s All Rights Reserved Privacy Center <span class="underline">|Privacy & Cookie
+                            Policy|Manage Cookies|Terms &
+                            Conditions|Copyright Notice|England|</span></p>
+                </div>
+                <div>
+                    <h2 class="text-2xl">WE ACCEPT</h2>
+                    <i class="fa-brands fa-cc-paypal text-4xl"></i>
+                    <i class="fa-brands fa-cc-mastercard text-4xl"></i>
+                    <i class="fa-brands fa-cc-visa text-4xl"></i>
+                </div>
+
+            </div>
+            <div class="mt-5 lg:hidden">
+                <p>©2021 GloCre8s All Rights Reserved Privacy Center <span class="underline">|Privacy & Cookie
+                        Policy|Manage Cookies|Terms &
+                        Conditions|Copyright Notice|England|</span></p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

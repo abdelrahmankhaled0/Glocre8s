@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box__login">
+            <h1>Welcome Back</h1>
+            <form action="../index.html">
+                <label for="name">Enter your Username :</label>
+                <br>
+                <input id="name" type="text" placeholder="Username" required>
+                <br>
+                <label for="password">Enter your Password :</label>
+                <br>
+                <input id="password" type="password" placeholder="***********" required>
+                <br>
+                <button id="button__login">Log in</button>
+                <p>Don't have an account? <a id="registerLink" href="">register now</a></p>
+            </form>
+        </div>
+        <div class="box__register">
+            <h1>Welcome</h1>
+            <form action="">
+                <label for="name__register">Enter your Username :</label>
+                <br>
+                <input id="name__register" type="text" placeholder="Username" required minlength="3" maxlength="20">
+                <br>
+                <label for="email__register">Enter your email :</label>
+                <br>
+                <input id="email__register" type="email" placeholder="name@gmail.com" required>
+                <br>
+                <label for="password__register">Enter Password :</label>
+                <br>
+                <input id="password__register" type="password" placeholder="***********" required minlength="8"
+                    maxlength="20">
+                <br>
+                <button id="button__register">register</button>
+                <p>Do you have an account? <a id="loginLink" href="">login now</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

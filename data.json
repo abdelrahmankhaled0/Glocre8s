@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "./images/product1.png",
+    "title": "Red And Black Head Wraps| 100% cotton",
+    "price": "$10.5"
+  },
+  {
+    "id": 2,
+    "image": "./images/product2.png",
+    "title": "African Print Cushion Cover ",
+    "price": "$28.5"
+  },
+  {
+    "id": 3,
+    "image": "./images/product3.png",
+    "title": "Summer Earrings For Women And Kids",
+    "price": "$3.2"
+  },
+  {
+    "id": 4,
+    "image": "./images/product4.png",
+    "title": "Goat Milk Turmeric Glow Soap",
+    "price": "$5.3"
+  },
+  {
+    "id": 5,
+    "image": "./images/product5.png",
+    "title": "Wedding Anniversary Printable Gift",
+    "price": "$7.2"
+  },
+  {
+    "id": 6,
+    "image": "./images/product6.png",
+    "title": "White And Black African Wax Fabric| 100% cotton",
+    "price": "$9.2"
+  },
+  {
+    "id": 7,
+    "image": "./images/product7.png",
+    "title": "Shades Of Red Fat Quarters Bundle Fabrics",
+    "price": "$5.8"
+  },
+  {
+    "id": 8,
+    "image": "./images/product8.png",
+    "title": "African Print Table Runner With 4 Napkins",
+    "price": "$5.3"
+  }
+]

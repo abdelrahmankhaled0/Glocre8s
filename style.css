@@ -1,0 +1,238 @@
+:root {
+    --mainColor: #FF4500
+}
+
+
+
+.container {
+    height: 100vh;
+    background-image: url(images/slider.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    perspective: 1000px;
+    position: relative;
+}
+
+
+
+.box__login,
+.box__register {
+    position: absolute;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+    transition: all 2s ease;
+}
+
+
+
+.box__login h1,
+.box__register h1 {
+    color: var(--mainColor);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signIn__click {
+    display: flex;
+}
+
+.navBar.signInclick-hidden .signIn__click {
+    display: none;
+}
+
+
+.box__login label,
+.box__register label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box__login input,
+.box__register input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.box__login input:focus,
+.box__register input:focus {
+    border: 1px solid #FF4500;
+}
+
+.box__login button,
+.box__register button {
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    background-color: #FF4500;
+    color: white;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.box__login p,
+.box__register p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box__login a,
+.box__register a {
+    color: var(--mainColor);
+}
+
+
+.box__login {
+    opacity: 1;
+    z-index: 0;
+    transform: rotateY(0deg);
+}
+
+.box__register {
+    opacity: 0;
+    z-index: -1;
+    transform: rotateY(-180deg);
+
+}
+
+.container.show-register .box__login {
+    opacity: 0;
+    z-index: -1;
+    transform: rotateY(180deg);
+
+}
+
+.container.show-register .box__register {
+    opacity: 1;
+    z-index: 0;
+    transform: rotateY(0deg);
+}
+
+
+/* cart style */
+
+
+.cart__page {
+    padding: 30px;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    background-color: #eaeaea;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    transform: translateX(100%);
+    z-index: 0;
+    overflow-y: auto;
+
+}
+
+.cart-show .cart__page {
+    z-index: 1;
+    transform: translateX(0);
+}
+
+.cart__page .cart__page__closingIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--mainColor);
+    font-size: 26px;
+    cursor: pointer;
+
+}
+
+.cart__page__item {
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1 solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.cart__page__item h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+}
+
+.cart__page__item img {
+    width: 100px;
+}
+
+.cart__page__item__operator {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart__page__item__operator i {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--mainColor);
+    border-radius: 12.5px;
+    color: white;
+    cursor: pointer;
+}
+
+.added_to_cart {
+    background-color: gray;
+    color: gainsboro;
+}
+
+.cart__remove__item {
+    color: crimson;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart__remove__item:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width:600px) {
+
+    .box__login input,
+    .box__register input {
+        width: 500px;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .box__login input,
+    .box__register input {
+        width: 300px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <header class="p-5 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-[#FF4500]">GloCre8s</a>
+        <!-- <div class="cart__icon cursor-pointer relative">
+            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            <div
+                class="absolute -top-2 -right-2 bg-[#FF4500] w-5 h-5 flex justify-center items-center rounded-full text-white">
+                0</div>
+        </div> -->
+    </header>
+
+    <main class="max-w-6xl mx-auto p-5">
+        <div class="grid lg:grid-cols-2 ">
+            <img id="product-image" class="w-[300px] rounded-xl shadow-lg" src="" alt="Product Image">
+            <div>
+                <h1 id="product-title" class="text-3xl font-bold text-[#FF4500] mb-4"></h1>
+                <p id="product-price" class="text-2xl font-semibold text-[#FF4500] mb-4"></p>
+                <p id="product-description" class="mb-4 text-gray-700"></p>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <button id="decreaseQty" class="px-3 py-1 bg-[#FF4500] text-white rounded">-</button>
+                    <p id="productQty" class="px-3 py-1 border rounded">1</p>
+                    <button id="increaseQty" class="px-3 py-1 bg-[#FF4500] text-white rounded">+</button>
+                </div>
+
+                <button id="addToCartBtn"
+                    class="px-5 py-2 bg-[#FF4500] text-white rounded hover:opacity-90 transition">Add To
+                    Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/product-details.js"></script>
+</body>
+
+</html>
